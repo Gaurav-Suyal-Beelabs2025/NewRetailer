@@ -3,14 +3,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BusinessProfileFragment">
 
 
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height= "wrap_content"
+          app:layout_constraintTop_toTopOf="parent"
+          android:background="#F2FAFF">
 
-      <ImageView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:src="@drawable/manwithscooter"/>
+     <TextView
+         android:id="@+id/txt_send_package"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+           android:text="Send Package"
+           android:textAllCaps="false"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+          android:layout_marginStart="@dimen/_23sdp"
+         android:layout_marginTop="@dimen/_10sdp"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/img_scooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/manwithscooter"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_17sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/scooterman_drawable"
+            app:layout_constraintStart_toStartOf="@id/txt_send_package"
+            app:layout_constraintTop_toBottomOf="@id/txt_send_package"/>
+
+          <TextView
+              android:id="@+id/txt_Two_Wheeler"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Two-Wheeler "
+              android:textSize="20sp"
+              android:textColor="@color/black"
+              android:textAllCaps="false"
+              android:layout_marginStart="@dimen/_19sdp"
+              android:layout_marginTop="@dimen/_15sdp"
+              app:layout_constraintTop_toTopOf="@id/img_scooter"
+               app:layout_constraintStart_toEndOf="@id/img_scooter"/>
+
+          <TextView
+              android:id="@+id/txt_delivery"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Delivery"
+              android:textSize="20sp"
+              android:textColor="@color/black"
+              android:textAllCaps="false"
+              app:layout_constraintTop_toBottomOf="@id/txt_Two_Wheeler"
+              app:layout_constraintStart_toStartOf="@id/txt_Two_Wheeler"/>
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="@dimen/_17sdp"
+               android:paddingVertical="@dimen/_5sdp"
+               android:paddingHorizontal="@dimen/_17sdp"
+               app:layout_constraintStart_toStartOf="@id/txt_delivery"
+               app:layout_constraintTop_toBottomOf="@id/txt_delivery"
+               android:background="@drawable/create_order">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Create Order"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white"
+                   android:textSize="12sp"/>
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/arrowforwad"
+                      android:layout_marginTop="@dimen/_4sdp"
+                      android:layout_marginStart="@dimen/_2sdp"/>
+
+           </LinearLayout>
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 
