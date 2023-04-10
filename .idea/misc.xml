@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/active.xml" value="0.2265" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/buttontrackorder.xml" value="0.2265" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/manwithscooter.xml" value="0.2265" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/order_details.xml" value="0.2265" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/order_details_gray.xml" value="0.2265" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/scooter_drawable.xml" value="0.2265" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_business_profile.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_order_details_.xml" value="0.264" />
         <entry key="..\:/Users/suyal/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/suyal/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_business_profile.xml" value="0.25" />
       </map>
