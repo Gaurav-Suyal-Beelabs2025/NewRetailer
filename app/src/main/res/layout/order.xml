@@ -1,6 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <TextView
+            android:id="@+id/txt_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#75558759"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_active"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:background="@drawable/success"
+            android:text="Success"
+             android:textSize="9sp"
+            android:textColor="#008105"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            app:layout_constraintTop_toTopOf="@id/txt_number"
+            app:layout_constraintStart_toEndOf="@id/txt_number"
+            app:layout_constraintBottom_toBottomOf="@id/txt_number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/02/2033 12:11 PM"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            app:layout_constraintTop_toTopOf="@id/txt_number"
+            app:layout_constraintBottom_toBottomOf="@id/txt_number"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_location_on_24"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@id/txt_number"
+            app:layout_constraintStart_toStartOf="@id/txt_number"/>
+
+        <TextView
+            android:id="@+id/txt_Kesari_Bakers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kesari Bakers"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/_7sdp"
+            app:layout_constraintStart_toEndOf="@id/img_location"
+            app:layout_constraintTop_toTopOf="@id/img_location"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rajeev Chauk blue line mango street New Delhi"
+            android:textAllCaps="false"
+            android:textColor="#9C9C9C"
+            android:textSize="10sp"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintStart_toStartOf="@id/txt_Kesari_Bakers"
+            app:layout_constraintTop_toBottomOf="@id/txt_Kesari_Bakers"/>
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="@id/img_location"
+            app:layout_constraintTop_toBottomOf="@id/img_location"/>
+
+        <ImageView
+            android:id="@+id/img_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_address"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/img_line"
+            app:layout_constraintStart_toStartOf="@id/img_location"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="@id/img_address"
+            app:layout_constraintStart_toStartOf="@id/txt_Kesari_Bakers"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rajeev Chauk New Delhi"
+            android:textAllCaps="false"
+            android:textColor="#9C9C9C"
+            android:textSize="10sp"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/txt_address"
+            app:layout_constraintStart_toStartOf="@id/txt_address"/>
+
+
+        <ImageView
+            android:id="@+id/img_call_racived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_recived"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintTop_toBottomOf="@id/img_address"
+            app:layout_constraintStart_toStartOf="@id/img_address"/>
+        <TextView
+            android:id="@+id/txt_Receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiver’s No."
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/txt_address"
+            app:layout_constraintTop_toTopOf="@id/img_call_racived"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_mb_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="98709 34265"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#9C9C9C"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/txt_Receiver"
+            app:layout_constraintStart_toStartOf="@id/txt_Receiver"/>
+
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/arrowforwardorange"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:layout_marginEnd="@dimen/_17sdp"
+             app:layout_constraintTop_toTopOf="@id/txt_mb_number"
+             app:layout_constraintBottom_toBottomOf="@id/txt_mb_number"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

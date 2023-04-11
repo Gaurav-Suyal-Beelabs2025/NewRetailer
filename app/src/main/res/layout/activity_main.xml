@@ -258,11 +258,13 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <TextView
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="We are waiting for a rider to confirm."
-                    android:textSize="11sp"
+                     android:textSize="11sp"
+                    android:hint="We are waiting for a rider to confirm."
+                    android:background="@color/white"
+                    android:textColorHint="@color/black"
                     android:textColor="@color/black"
                     android:textAllCaps="false"
                     android:layout_marginStart="5dp"

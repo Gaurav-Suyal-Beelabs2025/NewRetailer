@@ -7,95 +7,178 @@
     tools:context=".BusinessProfileFragment">
 
 
-      <androidx.constraintlayout.widget.ConstraintLayout
-          android:layout_width="match_parent"
-          android:layout_height= "wrap_content"
-          app:layout_constraintTop_toTopOf="parent"
-          android:background="#F2FAFF">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2FAFF"
+        app:layout_constraintTop_toTopOf="parent">
 
-     <TextView
-         android:id="@+id/txt_send_package"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-           android:text="Send Package"
-           android:textAllCaps="false"
-           android:textColor="@color/black"
-           android:textSize="16sp"
-          android:layout_marginStart="@dimen/_23sdp"
-         android:layout_marginTop="@dimen/_10sdp"
-         app:layout_constraintStart_toStartOf="parent"
-         app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/txt_send_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_23sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Send Package"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/img_scooter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/manwithscooter"
             android:layout_marginTop="@dimen/_12sdp"
-            android:padding="@dimen/_5sdp"
             android:layout_marginBottom="@dimen/_17sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
             android:background="@drawable/scooterman_drawable"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/manwithscooter"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/txt_send_package"
-            app:layout_constraintTop_toBottomOf="@id/txt_send_package"/>
+            app:layout_constraintTop_toBottomOf="@id/txt_send_package" />
 
-          <TextView
-              android:id="@+id/txt_Two_Wheeler"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Two-Wheeler "
-              android:textSize="20sp"
-              android:textColor="@color/black"
-              android:textAllCaps="false"
-              android:layout_marginStart="@dimen/_19sdp"
-              android:layout_marginTop="@dimen/_15sdp"
-              app:layout_constraintTop_toTopOf="@id/img_scooter"
-               app:layout_constraintStart_toEndOf="@id/img_scooter"/>
+        <TextView
+            android:id="@+id/txt_Two_Wheeler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/inter"
+            android:text="Two-Wheeler "
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/img_scooter"
+            app:layout_constraintTop_toTopOf="@id/img_scooter" />
 
-          <TextView
-              android:id="@+id/txt_delivery"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Delivery"
-              android:textSize="20sp"
-              android:textColor="@color/black"
-              android:textAllCaps="false"
-              app:layout_constraintTop_toBottomOf="@id/txt_Two_Wheeler"
-              app:layout_constraintStart_toStartOf="@id/txt_Two_Wheeler"/>
-
-
-           <LinearLayout
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:orientation="horizontal"
-               android:layout_marginTop="@dimen/_17sdp"
-               android:paddingVertical="@dimen/_5sdp"
-               android:paddingHorizontal="@dimen/_17sdp"
-               app:layout_constraintStart_toStartOf="@id/txt_delivery"
-               app:layout_constraintTop_toBottomOf="@id/txt_delivery"
-               android:background="@drawable/create_order">
-
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Create Order"
-                   android:textAllCaps="false"
-                   android:textColor="@color/white"
-                   android:textSize="12sp"/>
-
-                  <ImageView
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:paddingVertical="@dimen/_4sdp"
-                      android:src="@drawable/arrowforwad"
-                      android:layout_marginStart="@dimen/_2sdp"/>
-
-           </LinearLayout>
+        <TextView
+            android:id="@+id/txt_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/txt_Two_Wheeler"
+            app:layout_constraintTop_toBottomOf="@id/txt_Two_Wheeler" />
 
 
-      </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:background="@drawable/create_order"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_17sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="@id/txt_delivery"
+            app:layout_constraintTop_toBottomOf="@id/txt_delivery">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Order"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:src="@drawable/arrowforwad" />
+
+        </LinearLayout>
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+        <ImageView
+            android:id="@+id/img_menubar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menubar"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+            <TextView
+                android:id="@+id/txt_Kesri_bakers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kesri bakers"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginStart="@dimen/_17sdp"
+                app:layout_constraintTop_toTopOf="@id/img_menubar"
+                app:layout_constraintBottom_toBottomOf="@id/img_menubar"
+                app:layout_constraintStart_toEndOf="@id/img_menubar"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recharge_500"
+            android:layout_marginEnd="@dimen/_19sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_Kesri_bakers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_Kesri_bakers">
+
+            <TextView
+                android:id="@+id/txt_rupees500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/inter_bold"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="₹ 5000"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txt_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/recharge"
+                android:fontFamily="@font/inter_bold"
+                android:paddingHorizontal="@dimen/_6sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="Recharge"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintStart_toEndOf="@id/txt_rupees500"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
