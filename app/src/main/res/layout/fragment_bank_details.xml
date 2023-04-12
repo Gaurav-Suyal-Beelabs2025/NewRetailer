@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".BankDetailsFragment">
+
+
+      <LinearLayout
+          android:id="@+id/linner_img"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="@dimen/_20sdp"
+          android:layout_marginStart="@dimen/_15sdp"
+          app:layout_constraintStart_toStartOf="parent">
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/arrowback"
+              android:padding="@dimen/_6sdp"/>
+
+      </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_bank_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Bank_Details"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintTop_toTopOf="@id/linner_img"
+        app:layout_constraintBottom_toBottomOf="@id/linner_img"
+        app:layout_constraintStart_toEndOf="@id/linner_img"/>
+
+    <TextView
+        android:id="@+id/txt_verified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/verified_botton"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/Verified"
+        android:textAllCaps="false"
+        android:paddingVertical="@dimen/_4sdp"
+        android:textColor="@color/green"
+        android:textSize="10sp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_bank_details"
+        app:layout_constraintStart_toEndOf="@+id/txt_bank_details"
+        app:layout_constraintTop_toTopOf="@+id/txt_bank_details" />
+
+
+    <TextView
+        android:id="@+id/txt_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Change"
+        android:textAllCaps="false"
+        android:textColor="#0F6FB5"
+        android:textSize="10sp"
+        android:layout_marginEnd="@dimen/_19sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_verified"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_verified" />
+
+      <View
+          android:id="@+id/view_bank_details"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#12000000"
+          app:layout_constraintTop_toBottomOf="@id/txt_bank_details"
+          android:layout_marginTop="@dimen/_8sdp"/>
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_19sdp"
+           android:layout_marginHorizontal="@dimen/_18sdp"
+           app:layout_constraintTop_toBottomOf="@id/view_bank_details"
+           android:background="@drawable/bank_name">
+
+           <TextView
+               android:id="@+id/txt_bank_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/inter_medium"
+               android:text="Bank Name"
+               android:textAllCaps="false"
+               android:textColor="#686868"
+               android:textSize="12sp"
+               android:layout_marginStart="@dimen/_12sdp"
+               android:layout_marginTop="@dimen/_15sdp"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintStart_toStartOf="parent"/>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="-"
+                  android:textColor="@color/black"
+                  android:textSize="12sp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintTop_toTopOf="@id/txt_bank_name"
+                  app:layout_constraintBottom_toBottomOf="@id/txt_bank_name"/>
+
+           <TextView
+               android:id="@+id/txt_Axis_bank"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/inter_semibold"
+               android:text="Axis bank "
+               android:textAllCaps="false"
+               android:textColor="@color/black"
+                android:textSize="12sp"
+               android:layout_marginEnd="@dimen/_12sdp"
+               app:layout_constraintTop_toTopOf="@id/txt_bank_name"
+               app:layout_constraintEnd_toEndOf="parent"/>
+
+           <TextView
+               android:id="@+id/txt_AC_Name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/inter_medium"
+               android:text="A/C Name"
+               android:textAllCaps="false"
+               android:textColor="#686868"
+               android:textSize="12sp"
+               android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_bank_name"
+               app:layout_constraintStart_toStartOf="@id/txt_bank_name"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="-"
+               android:textColor="@color/black"
+               android:textSize="12sp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="@id/txt_AC_Name"
+               app:layout_constraintBottom_toBottomOf="@id/txt_AC_Name"/>
+
+           <TextView
+               android:id="@+id/txt_Restaurant_Name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/inter_semibold"
+               android:text="Restaurant Name "
+               android:textAllCaps="false"
+                android:textSize="12sp"
+               android:textColor="@color/black"
+               app:layout_constraintTop_toTopOf="@id/txt_AC_Name"
+               app:layout_constraintEnd_toEndOf="@id/txt_Axis_bank"/>
+
+           <TextView
+               android:id="@+id/txt_A_C_Number"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/inter_medium"
+               android:text="A/C Number"
+               android:textAllCaps="false"
+               android:textColor="#686868"
+               android:textSize="12sp"
+               android:layout_marginTop="@dimen/_12sdp"
+               app:layout_constraintTop_toBottomOf="@id/txt_AC_Name"
+               app:layout_constraintStart_toStartOf="@id/txt_AC_Name"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="-"
+               android:textColor="@color/black"
+               android:textSize="12sp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="@id/txt_A_C_Number"
+               app:layout_constraintBottom_toBottomOf="@id/txt_A_C_Number"/>
+
+           <TextView
+               android:id="@+id/txt_account_number"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/inter_semibold"
+               android:text="00008787766 "
+               android:textAllCaps="false"
+                android:textSize="12sp"
+               android:textColor="@color/black"
+               android:layout_marginBottom="@dimen/_15sdp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toTopOf="@id/txt_A_C_Number"
+               app:layout_constraintEnd_toEndOf="@id/txt_Restaurant_Name"/>
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

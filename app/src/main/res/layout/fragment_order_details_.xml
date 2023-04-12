@@ -31,6 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Order Details"
+            android:fontFamily="@font/inter_semibold"
             android:textSize="22sp"
             android:textColor="@color/black"
             android:textAllCaps="false"
@@ -63,713 +64,756 @@
         android:layout_marginTop="@dimen/_5sdp"
         app:layout_constraintTop_toBottomOf="@id/constantlayout_order_details"/>
 
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/view_order_details">
-
-
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-    <TextView
-        android:id="@+id/txt_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="#75558759"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_12sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_active"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/_14sdp"
-        android:background="@drawable/active"
-        android:text="Active"
-        android:textSize="9sp"
-        android:textColor="#0F6FB5"
-        android:textAllCaps="false"
-        android:textAlignment="center"
-        android:layout_marginStart="@dimen/_4sdp"
-        app:layout_constraintTop_toTopOf="@id/txt_number"
-        app:layout_constraintStart_toEndOf="@id/txt_number"
-        app:layout_constraintBottom_toBottomOf="@id/txt_number"/>
-
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="01/02/2033 12:11 PM"
-           android:textAllCaps="false"
-           android:textColor="@color/black"
-           android:textSize="12sp"
-           android:layout_marginEnd="@dimen/_18sdp"
-           app:layout_constraintTop_toTopOf="@id/txt_number"
-           app:layout_constraintBottom_toBottomOf="@id/txt_number"
-           app:layout_constraintEnd_toEndOf="parent"/>
-
-          <ImageView
-              android:id="@+id/img_location"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:src="@drawable/ic_baseline_location_on_24"
-              android:layout_marginTop="@dimen/_12sdp"
-              app:layout_constraintTop_toBottomOf="@id/txt_number"
-              app:layout_constraintStart_toStartOf="@id/txt_number"/>
-
-          <TextView
-              android:id="@+id/txt_Kesari_Bakers"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Kesari Bakers"
-              android:textSize="12sp"
-              android:textColor="@color/black"
-              android:textAllCaps="false"
-              android:layout_marginStart="@dimen/_7sdp"
-              app:layout_constraintStart_toEndOf="@id/img_location"
-              app:layout_constraintTop_toTopOf="@id/img_location"/>
-
-
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Rajeev Chauk blue line mango street New Delhi"
-              android:textAllCaps="false"
-              android:textColor="#9C9C9C"
-              android:textSize="10sp"
-              android:layout_marginTop="@dimen/_2sdp"
-              app:layout_constraintStart_toStartOf="@id/txt_Kesari_Bakers"
-              app:layout_constraintTop_toBottomOf="@id/txt_Kesari_Bakers"/>
-
-              <ImageView
-                  android:id="@+id/img_line"
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:src="@drawable/line"
-                  android:layout_marginTop="@dimen/_5sdp"
-                  android:layout_marginStart="@dimen/_8sdp"
-                  app:layout_constraintStart_toStartOf="@id/img_location"
-                  app:layout_constraintTop_toBottomOf="@id/img_location"/>
-
-              <ImageView
-                  android:id="@+id/img_address"
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:src="@drawable/ic_address"
-                  android:layout_marginStart="@dimen/_2sdp"
-                  android:layout_marginTop="@dimen/_2sdp"
-                  app:layout_constraintTop_toBottomOf="@id/img_line"
-                  app:layout_constraintStart_toStartOf="@id/img_location"/>
-
-
-
-    <TextView
-        android:id="@+id/txt_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Address"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintTop_toTopOf="@id/img_address"
-        app:layout_constraintStart_toStartOf="@id/txt_Kesari_Bakers"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rajeev Chauk New Delhi"
-        android:textAllCaps="false"
-        android:textColor="#9C9C9C"
-        android:textSize="10sp"
-        android:layout_marginTop="@dimen/_2sdp"
-        app:layout_constraintTop_toBottomOf="@id/txt_address"
-        app:layout_constraintStart_toStartOf="@id/txt_address"/>
-
-              <androidx.appcompat.widget.AppCompatButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="@dimen/_14sdp"
-                  android:background="@drawable/active"
-                  android:text="Edit Address"
-                  android:textSize="9sp"
-                  android:textColor="#0F6FB5"
-                  android:textAllCaps="false"
-                  android:textAlignment="center"
-                  android:layout_marginEnd="@dimen/_18sdp"
-                  app:layout_constraintEnd_toEndOf="parent"
-                  app:layout_constraintTop_toTopOf="@id/txt_address"/>
-
-        <ImageView
-            android:id="@+id/img_call_racived"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/call_recived"
-            android:layout_marginTop="@dimen/_25sdp"
-            app:layout_constraintTop_toBottomOf="@id/img_address"
-            app:layout_constraintStart_toStartOf="@id/img_address"/>
-    <TextView
-        android:id="@+id/txt_Receiver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Receiver’s No."
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@id/txt_address"
-         app:layout_constraintTop_toTopOf="@id/img_call_racived"/>
-
-
-
-      <TextView
-          android:id="@+id/txt_mb_number"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="98709 34265"
-          android:textAllCaps="false"
-          android:textSize="10sp"
-          android:textColor="#9C9C9C"
-          android:layout_marginTop="@dimen/_2sdp"
-          app:layout_constraintTop_toBottomOf="@id/txt_Receiver"
-          app:layout_constraintStart_toStartOf="@id/txt_Receiver"/>
-
-     <androidx.constraintlayout.widget.ConstraintLayout
-         android:id="@+id/constantlayout_scooter"
-         android:layout_width="match_parent"
-         android:layout_height="@dimen/_40sdp"
-         android:layout_marginHorizontal="@dimen/_18sdp"
-         android:layout_marginTop="@dimen/_19sdp"
-         app:layout_constraintTop_toBottomOf="@id/txt_mb_number"
-         android:background="@drawable/scooter_drawable">
-
-           <ImageView
-               android:id="@+id/img_scooter"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:src="@drawable/scooter"
-               android:layout_marginStart="@dimen/_13sdp"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toTopOf="parent"
-               app:layout_constraintBottom_toBottomOf="parent"/>
-
-             <TextView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:text="We are waiting for a rider to confirm."
-                 android:textSize="11sp"
-                 android:textColor="@color/black"
-                 android:textAllCaps="false"
-                 android:layout_marginStart="5dp"
-                 app:layout_constraintTop_toTopOf="@id/img_scooter"
-                 app:layout_constraintBottom_toBottomOf="@id/img_scooter"
-                 app:layout_constraintStart_toEndOf="@id/img_scooter"/>
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constantlayout_Order_details_full"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/order_details"
-        android:layout_marginTop="@dimen/_16sdp"
-        android:layout_marginHorizontal="@dimen/_19sdp"
-        app:layout_constraintTop_toBottomOf="@id/constantlayout_scooter">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constantlayout_orderdetails"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_32sdp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/order_details_gray">
-
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Order details"
-           android:textAllCaps="false"
-           android:textColor="@color/black"
-           android:textSize="13sp"
-           android:layout_marginStart="@dimen/_12sdp"
-           app:layout_constraintTop_toTopOf="parent"
-           app:layout_constraintBottom_toBottomOf="parent"
-           app:layout_constraintStart_toStartOf="parent"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-       <TextView
-           android:id="@+id/txt_distance"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Distance"
-           android:textSize="12sp"
-           android:textColor="#777777"
-           android:textAllCaps="false"
-           android:layout_marginTop="@dimen/_12sdp"
-           android:layout_marginStart="@dimen/_12sdp"
-           app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toBottomOf="@id/constantlayout_orderdetails"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="12.48 kms"
-            android:textSize="12sp"
-            android:textColor="@color/black"
-            android:textAllCaps="false"
-            android:layout_marginEnd="@dimen/_12sdp"
-            app:layout_constraintTop_toTopOf="@id/txt_distance"
-            app:layout_constraintBottom_toBottomOf="@id/txt_distance"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-             <TextView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:text="-"
-                 android:textColor="@color/black"
-                 android:textSize="12sp"
-                 app:layout_constraintStart_toStartOf="parent"
-                 app:layout_constraintEnd_toEndOf="parent"
-                 app:layout_constraintTop_toTopOf="@id/txt_distance"
-                 app:layout_constraintBottom_toBottomOf="@id/txt_distance"/>
+        app:layout_constraintTop_toBottomOf="@id/view_order_details">
 
 
 
-        <TextView
-            android:id="@+id/txt_Delivery_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Delivery item"
-            android:textSize="12sp"
-            android:textColor="#777777"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/_11sdp"
-            app:layout_constraintStart_toStartOf="@id/txt_distance"
-            app:layout_constraintTop_toBottomOf="@id/txt_distance"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_Delivery_item"
-            app:layout_constraintBottom_toBottomOf="@id/txt_Delivery_item"/>
-
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Food"
-            android:textSize="12sp"
-            android:textColor="@color/black"
-            android:textAllCaps="false"
-            android:layout_marginEnd="@dimen/_12sdp"
-            app:layout_constraintTop_toTopOf="@id/txt_Delivery_item"
-            app:layout_constraintBottom_toBottomOf="@id/txt_Delivery_item"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-
-        <TextView
-            android:id="@+id/txt_pickup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pickup date &amp; Time"
-            android:textSize="12sp"
-            android:textColor="#777777"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/_11sdp"
-            app:layout_constraintStart_toStartOf="@id/txt_Delivery_item"
-            app:layout_constraintTop_toBottomOf="@id/txt_Delivery_item"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_pickup"
-            app:layout_constraintBottom_toBottomOf="@id/txt_pickup"/>
-
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="01/02/2033 12:11 PM"
-            android:textSize="12sp"
-            android:textColor="@color/black"
-            android:textAllCaps="false"
-            android:layout_marginEnd="@dimen/_12sdp"
-            app:layout_constraintTop_toTopOf="@id/txt_pickup"
-            app:layout_constraintBottom_toBottomOf="@id/txt_pickup"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <TextView
-            android:id="@+id/txt_Delivery_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Delivery date &amp; Time"
-            android:textSize="12sp"
-            android:textColor="#777777"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/_11sdp"
-            app:layout_constraintStart_toStartOf="@id/txt_pickup"
-            app:layout_constraintTop_toBottomOf="@id/txt_pickup"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_Delivery_date"
-            app:layout_constraintBottom_toBottomOf="@id/txt_Delivery_date"/>
-
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="01/02/2033 12:11 PM"
-            android:textSize="12sp"
-            android:textColor="@color/black"
-            android:textAllCaps="false"
-            android:layout_marginEnd="@dimen/_12sdp"
-            app:layout_constraintTop_toTopOf="@id/txt_Delivery_date"
-            app:layout_constraintBottom_toBottomOf="@id/txt_Delivery_date"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <TextView
-            android:id="@+id/txt_Item_Weight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Item Weight"
-            android:textSize="12sp"
-            android:textColor="#777777"
-            android:textAllCaps="false"
-            android:layout_marginBottom="@dimen/_14sdp"
-            android:layout_marginTop="@dimen/_11sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@id/txt_Delivery_date"
-            app:layout_constraintTop_toBottomOf="@id/txt_Delivery_date"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_Item_Weight"
-            app:layout_constraintBottom_toBottomOf="@id/txt_Item_Weight"/>
-
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2 Kgs"
-            android:textSize="12sp"
-            android:textColor="@color/black"
-            android:textAllCaps="false"
-            android:layout_marginEnd="@dimen/_12sdp"
-            app:layout_constraintTop_toTopOf="@id/txt_Item_Weight"
-            app:layout_constraintBottom_toBottomOf="@id/txt_Item_Weight"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constantlayout_change_details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/order_details"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:layout_marginHorizontal="@dimen/_19sdp"
-        app:layout_constraintTop_toBottomOf="@id/constantlayout_Order_details_full">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constantlayout_changedetails"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_32sdp"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@drawable/order_details_gray">
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txt_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#75558759"
+                android:fontFamily="@font/inter_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_active"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/active"
+                android:text="Active"
+                android:textSize="9sp"
+                 android:fontFamily="@font/inter_semibold"
+                android:textColor="#0F6FB5"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:layout_marginStart="@dimen/_4sdp"
+                app:layout_constraintTop_toTopOf="@id/txt_number"
+                app:layout_constraintStart_toEndOf="@id/txt_number"
+                app:layout_constraintBottom_toBottomOf="@id/txt_number"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Charges Details"
+                android:text="01/02/2033 12:11 PM"
                 android:textAllCaps="false"
+                android:fontFamily="@font/inter_medium"
                 android:textColor="@color/black"
-                android:textSize="13sp"
-                android:layout_marginStart="@dimen/_12sdp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:textSize="12sp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                app:layout_constraintTop_toTopOf="@id/txt_number"
+                app:layout_constraintBottom_toBottomOf="@id/txt_number"
+                app:layout_constraintEnd_toEndOf="parent"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/img_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_location_on_24"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_number"
+                app:layout_constraintStart_toStartOf="@id/txt_number"/>
 
-        <TextView
-            android:id="@+id/txt_base"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Base Charges (For 2kms)"
-            android:textSize="12sp"
-            android:textColor="#777777"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:layout_marginStart="@dimen/_12sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/constantlayout_changedetails"/>
+            <TextView
+                android:id="@+id/txt_Kesari_Bakers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kesari Bakers"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:layout_marginStart="@dimen/_7sdp"
+                app:layout_constraintStart_toEndOf="@id/img_location"
+                app:layout_constraintTop_toTopOf="@id/img_location"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="₹35"
-            android:textSize="12sp"
-            android:textColor="@color/black"
-            android:textAllCaps="false"
-            android:layout_marginEnd="@dimen/_12sdp"
-            app:layout_constraintTop_toTopOf="@id/txt_base"
-            app:layout_constraintBottom_toBottomOf="@id/txt_base"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_base"
-            app:layout_constraintBottom_toBottomOf="@id/txt_base"/>
-
-
-
-        <TextView
-            android:id="@+id/txt_Per_kms_charges"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Per kms charges (after 2Kms) "
-            android:textSize="12sp"
-            android:textColor="#777777"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/_11sdp"
-            app:layout_constraintStart_toStartOf="@id/txt_base"
-            app:layout_constraintTop_toBottomOf="@id/txt_base"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_Per_kms_charges"
-            app:layout_constraintBottom_toBottomOf="@id/txt_Per_kms_charges"/>
-
-        <TextView
-            android:id="@+id/rupees35"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_12sdp"
-            android:text="₹35"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@id/txt_Per_kms_charges"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_Per_kms_charges" />
-
-          <View
-              android:id="@+id/view_charge_details"
-              android:layout_width="match_parent"
-              android:layout_height="1dp"
-              android:background="#EDEDED"
-              android:layout_marginTop="@dimen/_12sdp"
-              android:layout_marginHorizontal="@dimen/_13sdp"
-              app:layout_constraintTop_toBottomOf="@id/txt_Per_kms_charges"/>
-
-        <TextView
-            android:id="@+id/text_delivery_charge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:text="Delivery Charges "
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:layout_marginBottom="@dimen/_17sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@id/txt_Per_kms_charges"
-            app:layout_constraintTop_toBottomOf="@id/view_charge_details" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="₹80"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@+id/text_delivery_charge"
-            app:layout_constraintEnd_toEndOf="@+id/rupees35"
-            app:layout_constraintTop_toTopOf="@+id/text_delivery_charge" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constantlayout_customer_collection"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/order_details"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:layout_marginHorizontal="@dimen/_19sdp"
-        app:layout_constraintTop_toBottomOf="@id/constantlayout_change_details">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constantlayout_customer"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_32sdp"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@drawable/order_details_gray">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="customer_collection"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Rajeev Chauk blue line mango street New Delhi"
+                android:textAllCaps="false"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="#9C9C9C"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@id/txt_Kesari_Bakers"
+                app:layout_constraintTop_toBottomOf="@id/txt_Kesari_Bakers" />
+
+            <ImageView
+                android:id="@+id/img_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="@id/img_location"
+                app:layout_constraintTop_toBottomOf="@id/img_location"/>
+
+            <ImageView
+                android:id="@+id/img_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_address"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_line"
+                app:layout_constraintStart_toStartOf="@id/img_location"/>
+
+
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:fontFamily="@font/inter_medium"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="13sp"
-                android:layout_marginStart="@dimen/_12sdp"
-                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="@id/img_address"
+                app:layout_constraintStart_toStartOf="@id/txt_Kesari_Bakers"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rajeev Chauk New Delhi"
+                android:textAllCaps="false"
+                android:textColor="#9C9C9C"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="10sp"
+                android:layout_marginTop="@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_address"
+                app:layout_constraintStart_toStartOf="@id/txt_address"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_14sdp"
+                android:background="@drawable/active"
+                android:text="Edit Address"
+                android:textSize="9sp"
+                android:textColor="#0F6FB5"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:layout_marginEnd="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txt_address"/>
+
+            <ImageView
+                android:id="@+id/img_call_racived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call_recived"
+                android:layout_marginTop="@dimen/_25sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_address"
+                app:layout_constraintStart_toStartOf="@id/img_address"/>
+            <TextView
+                android:id="@+id/txt_Receiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receiver’s No."
+                android:fontFamily="@font/inter_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/txt_address"
+                app:layout_constraintTop_toTopOf="@id/img_call_racived"/>
+
+
+
+            <TextView
+                android:id="@+id/txt_mb_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="98709 34265"
+                android:fontFamily="@font/inter_medium"
+                android:textAllCaps="false"
+                android:textSize="10sp"
+                android:textColor="#9C9C9C"
+                android:layout_marginTop="@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_Receiver"
+                app:layout_constraintStart_toStartOf="@id/txt_Receiver"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constantlayout_scooter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_19sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_mb_number"
+                android:background="@drawable/scooter_drawable">
+
+                <ImageView
+                    android:id="@+id/img_scooter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/scooter"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@color/white"
+                    android:text="We are waiting for a rider to confirm."
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@id/img_scooter"
+                    app:layout_constraintStart_toEndOf="@id/img_scooter"
+                    app:layout_constraintTop_toTopOf="@id/img_scooter" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constantlayout_Order_details_full"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_details"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginHorizontal="@dimen/_19sdp"
+                app:layout_constraintTop_toBottomOf="@id/constantlayout_scooter">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constantlayout_orderdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/order_details_gray">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order details"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/inter_medium"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/txt_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance"
+                    android:textSize="12sp"
+                    android:textColor="#777777"
+                    android:fontFamily="@font/inter_regular"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/constantlayout_orderdetails"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12.48 kms"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_regular"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    app:layout_constraintTop_toTopOf="@id/txt_distance"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_distance"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_distance"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_distance"/>
+
+
+
+                <TextView
+                    android:id="@+id/txt_Delivery_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery item"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="#777777"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    app:layout_constraintStart_toStartOf="@id/txt_distance"
+                    app:layout_constraintTop_toBottomOf="@id/txt_distance"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_Delivery_item"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_Delivery_item"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    app:layout_constraintTop_toTopOf="@id/txt_Delivery_item"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_Delivery_item"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/txt_pickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup date &amp; Time"
+                    android:textSize="12sp"
+                    android:textColor="#777777"
+                    android:fontFamily="@font/inter_regular"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    app:layout_constraintStart_toStartOf="@id/txt_Delivery_item"
+                    app:layout_constraintTop_toBottomOf="@id/txt_Delivery_item"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_pickup"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_pickup"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01/02/2033 12:11 PM"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    app:layout_constraintTop_toTopOf="@id/txt_pickup"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_pickup"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txt_Delivery_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery date &amp; Time"
+                    android:textSize="12sp"
+                    android:textColor="#777777"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    app:layout_constraintStart_toStartOf="@id/txt_pickup"
+                    app:layout_constraintTop_toBottomOf="@id/txt_pickup"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_Delivery_date"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_Delivery_date"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01/02/2033 12:11 PM"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    app:layout_constraintTop_toTopOf="@id/txt_Delivery_date"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_Delivery_date"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txt_Item_Weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Weight"
+                    android:textSize="12sp"
+                    android:textColor="#777777"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginBottom="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/txt_Delivery_date"
+                    app:layout_constraintTop_toBottomOf="@id/txt_Delivery_date"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_Item_Weight"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_Item_Weight"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Kgs"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    app:layout_constraintTop_toTopOf="@id/txt_Item_Weight"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_Item_Weight"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constantlayout_change_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_details"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_19sdp"
+                app:layout_constraintTop_toBottomOf="@id/constantlayout_Order_details_full">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constantlayout_changedetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/order_details_gray">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Charges Details"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/inter_medium"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/txt_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Base Charges (For 2kms)"
+                    android:textSize="12sp"
+                    android:textColor="#777777"
+                    android:fontFamily="@font/inter_regular"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/constantlayout_changedetails"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹35"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    app:layout_constraintTop_toTopOf="@id/txt_base"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_base"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="11dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginStart="@dimen/_45sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_base"
+                    app:layout_constraintStart_toEndOf="@id/txt_base"
+                    app:layout_constraintTop_toTopOf="@id/txt_base" />
+
+
+
+                <TextView
+                    android:id="@+id/txt_Per_kms_charges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Per kms charges (after 2Kms) "
+                    android:textSize="12sp"
+                    android:textColor="#777777"
+                    android:fontFamily="@font/inter_regular"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    app:layout_constraintStart_toStartOf="@id/txt_base"
+                    app:layout_constraintTop_toBottomOf="@id/txt_base"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="11dp"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:text="-"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_Per_kms_charges"
+                    app:layout_constraintStart_toEndOf="@id/txt_Per_kms_charges"
+                    app:layout_constraintTop_toTopOf="@id/txt_Per_kms_charges" />
+
+                <TextView
+                    android:id="@+id/rupees35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:text="₹35"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_Per_kms_charges"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_Per_kms_charges" />
+
+                <View
+                    android:id="@+id/view_charge_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginHorizontal="@dimen/_13sdp"
+                    app:layout_constraintTop_toBottomOf="@id/txt_Per_kms_charges"/>
+
+                <TextView
+                    android:id="@+id/text_delivery_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="Delivery Charges "
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="@dimen/_17sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/txt_Per_kms_charges"
+                    app:layout_constraintTop_toBottomOf="@id/view_charge_details" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹80"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_delivery_charge"
+                    app:layout_constraintEnd_toEndOf="@+id/rupees35"
+                    app:layout_constraintTop_toTopOf="@+id/text_delivery_charge" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constantlayout_customer_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_details"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_19sdp"
+                app:layout_constraintTop_toBottomOf="@id/constantlayout_change_details">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constantlayout_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/order_details_gray">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="customer collection"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/inter_medium"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/txt_total_ammount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:textSize="12sp"
+                    android:textColor="#777777"
+                    android:fontFamily="@font/inter_regular"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/constantlayout_customer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_regular"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    app:layout_constraintTop_toTopOf="@id/txt_total_ammount"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_total_ammount"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_total_ammount"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_total_ammount"/>
+
+
+
+                <TextView
+                    android:id="@+id/txt_Mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mode"
+                    android:textSize="12sp"
+                    android:textColor="#777777"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/txt_total_ammount"
+                    app:layout_constraintTop_toBottomOf="@id/txt_total_ammount"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_Mode"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_Mode"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:text="NA"
+                    android:fontFamily="@font/inter_regular"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_Mode"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_Mode" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:layout_marginBottom="@dimen/_70sdp"
+                android:background="@drawable/buttontrackorder"
+                android:text="Track Order"
+                android:textAlignment="center"
+                android:fontFamily="@font/inter_bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintTop_toBottomOf="@id/constantlayout_customer_collection"
+                tools:layout_editor_absoluteX="25dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/txt_total_ammount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Amount"
-            android:textSize="12sp"
-            android:textColor="#777777"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:layout_marginStart="@dimen/_12sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/constantlayout_customer"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NA"
-            android:textSize="12sp"
-            android:textColor="@color/black"
-            android:textAllCaps="false"
-            android:layout_marginEnd="@dimen/_12sdp"
-            app:layout_constraintTop_toTopOf="@id/txt_total_ammount"
-            app:layout_constraintBottom_toBottomOf="@id/txt_total_ammount"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_total_ammount"
-            app:layout_constraintBottom_toBottomOf="@id/txt_total_ammount"/>
-
-
-
-        <TextView
-            android:id="@+id/txt_Mode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mode"
-            android:textSize="12sp"
-            android:textColor="#777777"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/_11sdp"
-            android:layout_marginBottom="@dimen/_12sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@id/txt_total_ammount"
-            app:layout_constraintTop_toBottomOf="@id/txt_total_ammount"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_Mode"
-            app:layout_constraintBottom_toBottomOf="@id/txt_Mode"/>
-
-        <TextView
-             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_12sdp"
-            android:text="NA"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@id/txt_Mode"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_Mode" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-          <androidx.appcompat.widget.AppCompatButton
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@drawable/buttontrackorder"
-              android:layout_marginHorizontal="@dimen/_19sdp"
-              android:layout_marginTop="@dimen/_22sdp"
-              android:text="Track Order"
-              android:textSize="15sp"
-              android:textColor="@color/white"
-              android:textAllCaps="false"
-              android:textAlignment="center"
-              android:layout_marginBottom="@dimen/_50sdp"
-              app:layout_constraintBottom_toBottomOf="parent"
-              app:layout_constraintTop_toBottomOf="@id/constantlayout_customer_collection"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.core.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

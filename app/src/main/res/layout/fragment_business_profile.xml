@@ -116,19 +116,19 @@
             app:layout_constraintTop_toTopOf="parent"
             />
 
-            <TextView
-                android:id="@+id/txt_Kesri_bakers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Kesri bakers"
-                android:textSize="12sp"
-                android:textColor="@color/black"
-                android:textAllCaps="false"
-                android:fontFamily="@font/inter_bold"
-                android:layout_marginStart="@dimen/_17sdp"
-                app:layout_constraintTop_toTopOf="@id/img_menubar"
-                app:layout_constraintBottom_toBottomOf="@id/img_menubar"
-                app:layout_constraintStart_toEndOf="@id/img_menubar"/>
+        <TextView
+            android:id="@+id/txt_Kesri_bakers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Kesri bakers"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_menubar"
+            app:layout_constraintStart_toEndOf="@id/img_menubar"
+            app:layout_constraintTop_toTopOf="@id/img_menubar" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
