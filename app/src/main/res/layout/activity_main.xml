@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".MainActivity">
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constantlayout_order_details"
         android:layout_width="match_parent"
@@ -92,12 +94,11 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_active"
-                android:layout_width="@dimen/_48sdp"
-                android:layout_height="@dimen/_14sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"
                 android:background="@drawable/active"
                 android:text="Active"
                 android:textSize="9sp"
-                android:shadowColor="@color/white"
                 android:fontFamily="@font/inter_semibold"
                 android:textColor="#0F6FB5"
                 android:textAllCaps="false"
@@ -202,8 +203,8 @@
                 app:layout_constraintStart_toStartOf="@id/txt_address"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_14sdp"
                 android:background="@drawable/active"
                 android:text="Edit Address"
                 android:textSize="9sp"
@@ -816,3 +817,5 @@
     </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

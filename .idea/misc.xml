@@ -6,21 +6,38 @@
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/active.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/bank_name.xml" value="0.1725" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/buttontrackorder.xml" value="0.2265" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/change_button_drawable.xml" value="0.1725" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/confirm_button_drawable.xml" value="0.1725" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/create_order.xml" value="0.1725" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/custom_switch.xml" value="0.1725" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/customer_mb_number.xml" value="0.1725" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/drop_off_drawable.xml" value="0.1725" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/enter_number.xml" value="0.1725" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/manwithscooter.xml" value="0.2265" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/nav_menu.xml" value="0.1725" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/order_details.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/order_details_gray.xml" value="0.2265" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/pick_location.xml" value="0.1725" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/recharge.xml" value="0.1725" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/recharge_500.xml" value="0.1725" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/scooter_drawable.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/scooterman_drawable.xml" value="0.1725" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/see_on_map.xml" value="0.1725" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/success.xml" value="0.1725" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/thumb.xml" value="0.1725" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/drawable/verified_botton.xml" value="0.1725" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/drop_off_adress.xml" value="0.2" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_bank_details.xml" value="0.264" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_business_profile.xml" value="0.14736842105263157" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_create__order_.xml" value="0.264" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_order_details_.xml" value="0.264" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_recharge_failed_.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_recharge_sucessfull_.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_setting_.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/order.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/pickup_address.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer/app/src/main/res/menu/nav_menu.xml" value="0.25" />
         <entry key="..\:/Users/suyal/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/suyal/AndroidStudioProjects/NewRetailer/app/src/main/res/layout/fragment_business_profile.xml" value="0.25" />
       </map>

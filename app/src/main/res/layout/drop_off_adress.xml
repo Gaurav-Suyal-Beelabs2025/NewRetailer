@@ -1,6 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/drop_off_drawable"
+           app:layout_constraintBottom_toBottomOf="parent">
+
+
+               <ImageView
+                   android:id="@+id/img_location"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                     android:src="@drawable/ic_location_orange"
+                   android:layout_marginTop="@dimen/_26sdp"
+                   android:layout_marginStart="@dimen/_15sdp"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"/>
+
+
+                  <TextView
+                      android:id="@+id/txt_drop_off"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Drop off Address"
+                      android:textAllCaps="false"
+                      android:textColor="@color/black"
+                      android:textSize="14sp"
+                      android:layout_marginStart="@dimen/_6sdp"
+                      android:fontFamily="@font/inter_bold"
+                      app:layout_constraintTop_toTopOf="@+id/img_location"
+                      app:layout_constraintStart_toEndOf="@id/img_location"/>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginEnd="@dimen/_19sdp"
+               android:background="@drawable/change_button_drawable"
+               android:paddingHorizontal="@dimen/_12sdp"
+               android:paddingVertical="@dimen/_2sdp"
+               app:layout_constraintBottom_toBottomOf="@id/txt_drop_off"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="@id/txt_drop_off">
+
+
+               <ImageView
+                   android:id="@+id/img_edit"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_edit"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/_3sdp"
+                   android:fontFamily="@font/inter_medium"
+                   android:text="Change"
+                   android:textAllCaps="false"
+                   android:textColor="#EF5B25"
+                   android:textSize="10sp"
+                   app:layout_constraintBottom_toBottomOf="@id/img_edit"
+                   app:layout_constraintStart_toEndOf="@id/img_edit"
+                   app:layout_constraintTop_toTopOf="@id/img_edit" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <TextView
+               android:id="@+id/txt_address"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_9sdp"
+               android:fontFamily="@font/inter_medium"
+               android:text="Seth Sarai, Meheroli, New Delhi, Delhi, india"
+               android:textAllCaps="false"
+               android:textColor="#969696"
+               android:textSize="12sp"
+               app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+               app:layout_constraintStart_toStartOf="@id/img_location"
+               app:layout_constraintTop_toBottomOf="@id/txt_drop_off" />
+
+
+              <TextView
+                  android:id="@+id/txt_rider_will_call"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/confirm_button_drawable"
+                   android:textSize="12sp"
+                  android:backgroundTint="#E7F5FF"
+                  android:textColor="#0F6FB5"
+                  android:text="Rider will call customer from this address"
+                  android:textAllCaps="false"
+                  android:paddingVertical="@dimen/_5sdp"
+                  android:layout_marginTop="@dimen/_12sdp"
+                  android:layout_marginHorizontal="@dimen/_19sdp"
+                  app:layout_constraintTop_toBottomOf="@id/txt_address"
+                  android:fontFamily="@font/inter_semibold"
+                  android:textAlignment="center"/>
+
+
+
+              <androidx.appcompat.widget.AppCompatButton
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/confirm_button_drawable"
+                  android:text="Confirm"
+                  android:textAlignment="center"
+                  android:textAllCaps="false"
+                  android:textColor="@color/white"
+                  android:textSize="15sp"
+                  android:layout_marginTop="@dimen/_29sdp"
+                  android:fontFamily="@font/inter_bold"
+                  android:layout_marginBottom="@dimen/_20sdp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/txt_rider_will_call"
+                  android:layout_marginHorizontal="@dimen/_19sdp"/>
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
